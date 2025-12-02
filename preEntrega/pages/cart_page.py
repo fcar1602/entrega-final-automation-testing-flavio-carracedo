@@ -46,3 +46,9 @@ class CartListContainer(BasePage):
     def click_remove_from_cart_by_index(driver, index=0):
         buttons = driver.find_elements(*CartListContainer.CART_REMOVE_BUTTON)
         buttons[index].click()
+
+    def click_continue_shopping_button(driver):
+        return driver.find_element(*CartListContainer.CART_CONTINUE_SHOPPING_BUTTON).click()
+    
+    def click_checkout_button(driver):
+        return driver.find_element(*CartListContainer.CART_CHECKOUT_BUTTON).click()

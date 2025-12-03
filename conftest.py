@@ -4,7 +4,7 @@ import base64
 import pytest
 import logging
 import io
-from entregaFinal.api_utils import APIClient
+from entregaFinal.utils.api_utils import APIClient
 from selenium import webdriver
 import pytest
 from faker import Faker
